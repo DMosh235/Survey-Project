@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+  <head>
+    <meta charset = "UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyStyles.css" />
+  </head>
+  <body>
+    <h1 id="title">Daniel Moshovetis Survey</h1>
+    <p id="description">This project aims to display some of the skills I have built. This project was built on my own using the knowledge I gained during my previous practice challenges.</p>
+    <form id="survey-form">
+      <fieldset>
+      <label for="name" id="name-label">Enter your name: <input id="name" type="text" placeholder="Johnny Appleseed" required></label>
+      <label for="email" id="email-label">Enter your email: <input id="email" type="email" placeholder="Example@MadeUp.com" required></label>
+      <label for="male"><input id="male" type="radio" name="gender" class="inline" value="1"/> Male</label>
+      <label for="female"><input id="female" type="radio" name="gender" class="inline" value="2"/> Female</label>
+      <label for="other"><input id="other" type="radio" name="gender" class="inline" value="1"/> Other/ Do Not Wish To Identify</label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What is your favorite programming language?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">C/C++</option>
+            <option value="2">Java</option>
+            <option value="3">JavaScript</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="number" id="number-label">What is your favorite number?<input id="number" type="number" min=1 max = 999 placeholder="Choose" required></label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="100"/> I accept the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">terms and conditions</a>
+        </label>
+        <label for="smile"><input id="smile" type="checkbox" name="smile" class="inline" value=":)" required> Are you enjoying this experience? </label>
+      </fieldset>
+      <fieldset>
+        <label for="quote">Favorite movie quote:
+          <textarea id="quote" name="quote" rows="3" cols="30" placeholder="Hacker: Im in..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit Answers" id="submit"/>
+    </form>
+  </body>
